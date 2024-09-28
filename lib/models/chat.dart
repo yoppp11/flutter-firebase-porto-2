@@ -6,14 +6,14 @@ class Chat {
   final String receiverId;
   final String senderId;
   final Map? bikeDetails;
-  final Timestamp timestamp;
+  final Timestamp? timestamp;
   Chat({
     required this.roomId,
     required this.message,
     required this.receiverId,
     required this.senderId,
     this.bikeDetails,
-    required this.timestamp,
+    this.timestamp,
   });
 
   Map<String, dynamic> toJson() {
